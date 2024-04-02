@@ -8,20 +8,26 @@ import { /* connectStorageEmulator, */ getStorage } from 'firebase/storage';
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+/*
+    NOTE: Work around for error "OPERATION_NOT_ALLOWED : Please verify the new email before changing email."
+
+    uncheck Email enumeration protection in firebase
+    Authentication / settings / User actions
+ **/
 const firebaseConfig = {
-    apiKey: "AIzaSyBIUTIzqsPQ0sNV0Rg--HpPNyGYn9oMDSU",
-    authDomain: "taskmesite2.firebaseapp.com",
-    projectId: "taskmesite2",
-    storageBucket: "taskmesite2.appspot.com",
-    messagingSenderId: "44122836013",
-    appId: "1:44122836013:web:24edbb8c9f3a671c40fca4",
+    apiKey: 'FILL_ME_IN',
+    authDomain: 'FILL_ME_IN',
+    projectId: 'FILL_ME_IN',
+    storageBucket: 'FILL_ME_IN',
+    messagingSenderId: 'FILL_ME_IN',
+    appId: 'FILL_ME_IN',
 };
 
 // Initialize Firebase
 export const firebaseApp = initializeApp(firebaseConfig);
 
 export const firestore = getFirestore(firebaseApp);
-export const baseBucketName = 'taskmesite';
+export const baseBucketName = 'FILL_ME_IN';
 
 /* if (isDev) {
     connectFirestoreEmulator(firestore, '127.0.0.1', 8081);
